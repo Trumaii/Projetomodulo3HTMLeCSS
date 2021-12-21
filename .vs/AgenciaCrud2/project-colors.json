@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5163899e-9cbf-4ed6-8c08-cfa7116e8487": {
+      "ProjectGuid": "5163899e-9cbf-4ed6-8c08-cfa7116e8487",
+      "DisplayName": "AgenciaCrud2",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

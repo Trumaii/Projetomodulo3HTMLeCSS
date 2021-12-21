@@ -1,0 +1,53 @@
+﻿@model IEnumerable<AgenciaCrud2.Models.Destino>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Cadastro de Destino</h1>
+
+<p>
+    <a asp-action="Create"><button type="button" class="btn btn-primary">Cadastrar Novo</button></a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descrição)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descrição)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id"><button type="button" class="btn btn-dark">Editar</button></a> |
+                <a asp-action="Details" asp-route-id="@item.Id"><button type="button" class="btn btn-warning">Info</button></a> |
+                <a asp-action="Delete" asp-route-id="@item.Id"><button type="button" class="btn btn-danger">Deletar</button></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

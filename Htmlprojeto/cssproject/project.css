@@ -1,0 +1,108 @@
+@charset "UTF-8";
+section#menu
+{
+    display: inline;
+}
+
+section#menu a 
+{
+    color: #f8f4f4;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+section#menu a:hover
+{
+    color: white;
+}
+
+section#menu ul 
+{
+    list-style: none;
+    font-size: large;
+    position: absolute;
+    top: -10px;
+    left: 544px;
+    
+}
+
+section#menu li 
+{
+    display: inline;
+    background-color: #690769;
+    padding: 10px;
+    margin: 2px;
+    transition-duration: 1s;
+}    
+
+section#menu li:hover 
+{
+    background-color: #9331e2;
+
+}
+footer
+{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+section#titulo h2 
+
+{text-align: center;
+    background-color:burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 40px;
+    font-size: 35pt;
+
+}
+
+section#titulo p
+{text-align: center;
+margin-top: 300px;
+font-size: 25pt;
+
+}
+
+body.bg
+
+{
+    background-image: url(../Imagens/fotobackgroud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#Cidades 
+
+{
+display: flex;
+margin-top: 200px;
+align-items: center;
+margin-left: 380px;
+}
+
+section#Cidades p
+
+{
+text-align: center;
+font-size: 15pt;
+
+}
+
+section#titulo h3
+
+{
+
+   
+    
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+
+

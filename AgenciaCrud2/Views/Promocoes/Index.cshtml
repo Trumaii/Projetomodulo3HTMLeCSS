@@ -1,0 +1,59 @@
+﻿@model IEnumerable<AgenciaCrud2.Models.Promocao>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Promoções</h1>
+
+<p>
+    <a asp-action="Create"><button type="button" class="btn btn-primary">Cadastrar</button></a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Saida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Retorno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destino.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Saida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Retorno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id"><button type="button" class="btn btn-dark">Editar</button></a>
+                <a asp-action="Details" asp-route-id="@item.Id"><button type="button" class="btn btn-warning">Info</button></a>
+                <a asp-action="Delete" asp-route-id="@item.Id"><button type="button" class="btn btn-danger">Deletar</button></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
